@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table tables-striped table-inverse table-responsive">
+    <thead class="thead-inverse">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Code du RV</th>
+        <th scope="col">Description</th>
+        <th scope="col">Lieu</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rv of rvs">
+        <td>{{rv.id}}</td>
+        <td>{{rv.codeRv}}</td>
+        <td>{{rv.description}}</td>
+        <td>{{rv.lieu}}</td>
+        <td>{{rv.date}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
